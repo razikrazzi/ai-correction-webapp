@@ -1,0 +1,49 @@
+{
+  "paperId": "697f12137deeaf975d22bc88",
+  "originalFileName": "history.png",
+  "extractedText": "History Test\nName: Sarah Miller Date: March 12, 2023\n1. Who was the first President of the United States?\nThe first President of the United States was George Washington. He was elected\nin 1789 and served two terms as president. Washington is often called the\n“Father of His Country\" for his role in leading the nation during its early years.\n2. What year did the Declaration of Independence get signed?\nThe Declaration of Independence was signed in the year 1778. 1776,\nThat is when the 13 colonies declared their independence from England and\nstarted the United States.\n3. Name one cause of the American Revolution.\nA major cause of the American Revolution was the British imposing high taxes on\nthe colonies without giving them representation in Parliament. The colonists\nwere angry that they had to pay taxes to a government where they had no voice.\n4. Describe two effects of the Civil War.\nOne maior effect of the Civil War was the emancipation of slaves. The war led to\nthe end of slavery in the United States. Another effect was that the southern states\nsuffered greatly, as many of their cities were destroyed and their economy was severely\ndamaged. The South was left devastated and very poor after the war.\nUnceleer sccand effect.",
+  "sections": [
+    {
+      "name": "Section A",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section B",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section C",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section D",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    }
+  ],
+  "analysisResults": {
+    "extractedText": "History Test\nName: Sarah Miller Date: March 12, 2023\n1. Who was the first President of the United States?\nThe first President of the United States was George Washington. He was elected\nin 1789 and served two terms as president. Washington is often called the\n“Father of His Country\" for his role in leading the nation during its early years.\n2. What year did the Declaration of Independence get signed?\nThe Declaration of Independence was signed in the year 1778. 1776,\nThat is when the 13 colonies declared their independence from England and\nstarted the United States.\n3. Name one cause of the American Revolution.\nA major cause of the American Revolution was the British imposing high taxes on\nthe colonies without giving them representation in Parliament. The colonists\nwere angry that they had to pay taxes to a government where they had no voice.\n4. Describe two effects of the Civil War.\nOne maior effect of the Civil War was the emancipation of slaves. The war led to\nthe end of slavery in the United States. Another effect was that the southern states\nsuffered greatly, as many of their cities were destroyed and their economy was severely\ndamaged. The South was left devastated and very poor after the war.\nUnceleer sccand effect.",
+    "handwritingScore": 94,
+    "readabilityScore": 94,
+    "estimatedTime": 5,
+    "wordCount": 213,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 94,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-02-01T08:43:05.533Z",
+  "tesseractResults": {
+    "confidence": 94,
+    "wordCount": 213,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

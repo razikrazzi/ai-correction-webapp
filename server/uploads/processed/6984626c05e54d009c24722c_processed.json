@@ -1,0 +1,26 @@
+{
+  "paperId": "6984626c05e54d009c24722c",
+  "originalFileName": "english.jpg",
+  "extractedText": "1) Hi My Name is Razik \n2) How Are you \n3) What is your Name",
+  "sections": [],
+  "analysisResults": {
+    "extractedText": "1) Hi My Name is Razik \n2) How Are you \n3) What is your Name",
+    "handwritingScore": 85,
+    "readabilityScore": 85,
+    "estimatedTime": 5,
+    "wordCount": 15,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 90,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-02-05T09:27:10.754Z",
+  "ocrResults": {
+    "provider": "groq",
+    "confidence": 90,
+    "wordCount": 15,
+    "pages": 1,
+    "hasHandwriting": true,
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct"
+  }
+}

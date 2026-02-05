@@ -1,0 +1,54 @@
+{
+  "paperId": "696e550f260cd5f6e1b87dba",
+  "originalFileName": "Screenshot (55).png",
+  "extractedText": "Features of Linux\n\n* Portable — can work on different types of hardware in same way.\n\n* Open Source — Source code of Linux is freely available.\n\n* Multi User Support — Multiple users can access the system resources\nat same time.\n\n* Multi Programming - Multiple programs can be run at same time.\n\n¢ Shell — Special Interpreter program - used to execute commands.\n\n¢ Application Support — Has it’s own software repository and also\nallows user to run Windows Applications.\n\n() For Notes download BCA Resources App",
+  "sections": [
+    {
+      "name": "Section A",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section B",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section C",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section D",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    }
+  ],
+  "analysisResults": {
+    "extractedText": "Features of Linux\n\n* Portable — can work on different types of hardware in same way.\n\n* Open Source — Source code of Linux is freely available.\n\n* Multi User Support — Multiple users can access the system resources\nat same time.\n\n* Multi Programming - Multiple programs can be run at same time.\n\n¢ Shell — Special Interpreter program - used to execute commands.\n\n¢ Application Support — Has it’s own software repository and also\nallows user to run Windows Applications.\n\n() For Notes download BCA Resources App",
+    "handwritingScore": 92,
+    "readabilityScore": 92,
+    "estimatedTime": 5,
+    "wordCount": 89,
+    "sectionMarks": {
+      "Section A": 0,
+      "Section B": 0,
+      "Section C": 0,
+      "Section D": 0
+    },
+    "overallFeedback": "AI Grading is disabled in this version (Offline Mode). Text has been extracted for manual review.",
+    "accuracyScore": 92,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-01-19T16:00:29.769Z",
+  "tesseractResults": {
+    "confidence": 92,
+    "wordCount": 89,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

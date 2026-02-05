@@ -1,0 +1,24 @@
+{
+  "paperId": "6980410f7cc58ba28de9090d",
+  "originalFileName": "answer key.png",
+  "extractedText": "Answer Key\nHistory Test - Answer Key :\n1. Who was the first President of the United States?\nAnswer: George Washington.\n2. What year did the Declaration of Independence get signed?\nAnswer: 1776.\n3. Name one cause of the American Revolution.\nAnswer: High taxes by the British.\n4. Describe two effects of the Civil War.\n- Slavery ended.\n- The South's economy was devastated. — |",
+  "sections": [],
+  "analysisResults": {
+    "extractedText": "Answer Key\nHistory Test - Answer Key :\n1. Who was the first President of the United States?\nAnswer: George Washington.\n2. What year did the Declaration of Independence get signed?\nAnswer: 1776.\n3. Name one cause of the American Revolution.\nAnswer: High taxes by the British.\n4. Describe two effects of the Civil War.\n- Slavery ended.\n- The South's economy was devastated. — |",
+    "handwritingScore": 92,
+    "readabilityScore": 92,
+    "estimatedTime": 5,
+    "wordCount": 66,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 92,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-02-02T06:15:50.638Z",
+  "tesseractResults": {
+    "confidence": 92,
+    "wordCount": 66,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

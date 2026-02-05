@@ -1,0 +1,39 @@
+{
+  "paperId": "69524776472713a4f35388c2",
+  "originalFileName": "Screenshot (60).png",
+  "extractedText": "This is simulated extracted text from Screenshot (60).png\n\nSection analysis completed.",
+  "sections": [
+    {
+      "name": "Section A",
+      "marks": 25
+    },
+    {
+      "name": "Section B",
+      "marks": 25
+    },
+    {
+      "name": "Section C",
+      "marks": 25
+    },
+    {
+      "name": "Section D",
+      "marks": 25
+    }
+  ],
+  "analysisResults": {
+    "extractedText": "This is simulated extracted text from Screenshot (60).png\n\nSection analysis completed.",
+    "handwritingScore": 94,
+    "readabilityScore": 92,
+    "estimatedTime": 10,
+    "wordCount": 717,
+    "sectionMarks": {
+      "Section A": 5,
+      "Section B": 13,
+      "Section C": 20,
+      "Section D": 5
+    },
+    "overallFeedback": "Good attempt. Handwriting is clear and answers are well-structured. Shows understanding of key concepts.",
+    "accuracyScore": 95
+  },
+  "processedAt": "2025-12-29T09:19:08.452Z"
+}

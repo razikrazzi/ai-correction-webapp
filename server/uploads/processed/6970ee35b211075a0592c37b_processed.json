@@ -1,0 +1,24 @@
+{
+  "paperId": "6970ee35b211075a0592c37b",
+  "originalFileName": "Screenshot 2025-10-18 190542.png",
+  "extractedText": "Data Representation\n\n2. Numbers:\n\nNumbers are also represented by bit patterns. However, a code such as ASCII is not used to\nrepresent numbers. The number is directly converted to a binary number to simplify\nmathematical operations,\n\n3. Audio: Audio refers to the recording or broadcasting of sound or music. Audio is by nature\ndifferent from text, numbers, or images. It is continuous, not discrete. Even when we use a\nmicrophone to change voice or music to an electric signal, we create a continuous signal.",
+  "sections": [],
+  "analysisResults": {
+    "extractedText": "Data Representation\n\n2. Numbers:\n\nNumbers are also represented by bit patterns. However, a code such as ASCII is not used to\nrepresent numbers. The number is directly converted to a binary number to simplify\nmathematical operations,\n\n3. Audio: Audio refers to the recording or broadcasting of sound or music. Audio is by nature\ndifferent from text, numbers, or images. It is continuous, not discrete. Even when we use a\nmicrophone to change voice or music to an electric signal, we create a continuous signal.",
+    "handwritingScore": 94,
+    "readabilityScore": 94,
+    "estimatedTime": 5,
+    "wordCount": 84,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 94,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-01-21T15:18:20.247Z",
+  "tesseractResults": {
+    "confidence": 94,
+    "wordCount": 84,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

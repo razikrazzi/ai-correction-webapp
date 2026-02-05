@@ -1,0 +1,49 @@
+{
+  "paperId": "696e58823ebbb77d94b6c0e7",
+  "originalFileName": "Screenshot (56).png",
+  "extractedText": "Advantages of Linux\n\n* Open Source — Redistribute, free to use\n\n* Low cost — no need to spend time & huge amount to obtain License.\n\n* Stability — More stable compared to other OS.\n\n* Performance — Ability to handle large number of users simultaneously.\n\n* Flexibility — Used for server applications, desktop applications\n\n* Compatibility — Supports all common Unix Software & able to process all\ncommon file formats\n\n* Security — Provides encryption, file ownership and permission.\n\n* Better usage of hard disk — Linux uses its resources well even when hard\ndisk is almost full.\n\n(B) For Notes download BCA Resources App",
+  "sections": [
+    {
+      "name": "Section A",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section B",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section C",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section D",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    }
+  ],
+  "analysisResults": {
+    "extractedText": "Advantages of Linux\n\n* Open Source — Redistribute, free to use\n\n* Low cost — no need to spend time & huge amount to obtain License.\n\n* Stability — More stable compared to other OS.\n\n* Performance — Ability to handle large number of users simultaneously.\n\n* Flexibility — Used for server applications, desktop applications\n\n* Compatibility — Supports all common Unix Software & able to process all\ncommon file formats\n\n* Security — Provides encryption, file ownership and permission.\n\n* Better usage of hard disk — Linux uses its resources well even when hard\ndisk is almost full.\n\n(B) For Notes download BCA Resources App",
+    "handwritingScore": 91,
+    "readabilityScore": 91,
+    "estimatedTime": 5,
+    "wordCount": 106,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 91,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-01-19T16:15:05.233Z",
+  "tesseractResults": {
+    "confidence": 91,
+    "wordCount": 106,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

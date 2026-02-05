@@ -1,0 +1,24 @@
+{
+  "paperId": "6970edaa58a210760e140c6e",
+  "originalFileName": "Screenshot 2025-10-18 183850.png",
+  "extractedText": "Data Communication\n\n* The word data refers to information presented in whatever form is agreed upon by the\nparties creating and using the data.\n\n¢ Data communications are the exchange of data between two devices via some form of\ntransmission medium such as a wire cable.\n\n* For data communications to occur, the communicating devices must be part of a\ncommunication system made up of a combination of hardware (physical equipment) and\nsoftware (programs).",
+  "sections": [],
+  "analysisResults": {
+    "extractedText": "Data Communication\n\n* The word data refers to information presented in whatever form is agreed upon by the\nparties creating and using the data.\n\n¢ Data communications are the exchange of data between two devices via some form of\ntransmission medium such as a wire cable.\n\n* For data communications to occur, the communicating devices must be part of a\ncommunication system made up of a combination of hardware (physical equipment) and\nsoftware (programs).",
+    "handwritingScore": 91,
+    "readabilityScore": 91,
+    "estimatedTime": 5,
+    "wordCount": 74,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 91,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-01-21T15:15:58.802Z",
+  "tesseractResults": {
+    "confidence": 91,
+    "wordCount": 74,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

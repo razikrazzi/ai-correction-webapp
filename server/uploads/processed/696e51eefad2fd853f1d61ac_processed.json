@@ -1,0 +1,54 @@
+{
+  "paperId": "696e51eefad2fd853f1d61ac",
+  "originalFileName": "Screenshot (60).png",
+  "extractedText": "Linux File System ( Cont. )\n* Data Block\n* Starts at the send of the inode table\n* Contains actual file contents.\n* Contains several types of files.\n* Contains user files, directory files, symbolic link, block files etc.\n(B) For Notes download BCA Resources App",
+  "sections": [
+    {
+      "name": "Section A",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section B",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section C",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    },
+    {
+      "name": "Section D",
+      "marks": 25,
+      "keywords": [],
+      "concepts": []
+    }
+  ],
+  "analysisResults": {
+    "extractedText": "Linux File System ( Cont. )\n* Data Block\n* Starts at the send of the inode table\n* Contains actual file contents.\n* Contains several types of files.\n* Contains user files, directory files, symbolic link, block files etc.\n(B) For Notes download BCA Resources App",
+    "handwritingScore": 93,
+    "readabilityScore": 93,
+    "estimatedTime": 5,
+    "wordCount": 47,
+    "sectionMarks": {
+      "Section A": 0,
+      "Section B": 0,
+      "Section C": 0,
+      "Section D": 0
+    },
+    "overallFeedback": "AI Grading is disabled in this version (Offline Mode). Text has been extracted for manual review.",
+    "accuracyScore": 93,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-01-19T15:46:59.359Z",
+  "tesseractResults": {
+    "confidence": 93,
+    "wordCount": 47,
+    "pages": 1,
+    "hasHandwriting": true
+  }
+}

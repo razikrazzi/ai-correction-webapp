@@ -1,0 +1,26 @@
+{
+  "paperId": "698487bae3e443562af25c32",
+  "originalFileName": "biology.pdf",
+  "extractedText": "Biology – Answer Key\nClass: 12\nSubject: Biology\n\n1. What is photosynthesis?\nPhotosynthesis is the process by which green plants synthesize food using carbon dioxide and water in the presence of sunlight and chlorophyll.\n\n2. Name the cell organelle known as the “powerhouse of the cell”.\nMitochondria.\n\n3. What is the basic unit of heredity?\nGene.\n\n4. Define osmosis.\nOsmosis is the movement of water molecules from a region of higher water concentration to a region of lower water concentration through a semipermeable membrane.\n\n5. Which blood cells help in clotting of blood?\nPlatelets (Thrombocytes).\n\n6. What is the function of ribosomes?\nRibosomes are responsible for protein synthesis.\n\n7. Name the plant hormone responsible for growth of stem.\nAuxin.\n\n8. What is respiration?\nRespiration is the biochemical process by which food is broken down to release energy.\n\n9. Name the pigment present in red blood cells.\nHemoglobin.\n\n10. What is meant by biodiversity?\nBiodiversity refers to the variety and variability of living organisms in a given area.\n\n11. Which part of the brain controls balance of the body?\nCerebellum.\n\n12. Define ecology.\nEcology is the study of interactions between organisms and their environment.\n\n13. What is DNA?\nDNA (Deoxyribonucleic Acid) is the genetic material that carries hereditary information.\n\n14. Name the respiratory organ in fish.\nGills.\n\n15. What is vaccination?\nVaccination is the process of administering weakened or dead pathogens to stimulate immunity against specific diseases.\n\n16. Which gas is released during photosynthesis?\nOxygen.\n\n17. What is the role of insulin hormone?\nInsulin regulates blood glucose levels by promoting the uptake of glucose by cells.\n\n18. Name the scientist who proposed the theory of evolution.\nCharles Darwin.\n\n19. What is an ecosystem?\nAn ecosystem is a functional unit where living organisms interact with each other and with the non-living environment.\n\n20. Define genetics.\nGenetics is the branch of biology that deals with heredity and variation",
+  "sections": [],
+  "analysisResults": {
+    "extractedText": "Biology – Answer Key\nClass: 12\nSubject: Biology\n\n1. What is photosynthesis?\nPhotosynthesis is the process by which green plants synthesize food using carbon dioxide and water in the presence of sunlight and chlorophyll.\n\n2. Name the cell organelle known as the “powerhouse of the cell”.\nMitochondria.\n\n3. What is the basic unit of heredity?\nGene.\n\n4. Define osmosis.\nOsmosis is the movement of water molecules from a region of higher water concentration to a region of lower water concentration through a semipermeable membrane.\n\n5. Which blood cells help in clotting of blood?\nPlatelets (Thrombocytes).\n\n6. What is the function of ribosomes?\nRibosomes are responsible for protein synthesis.\n\n7. Name the plant hormone responsible for growth of stem.\nAuxin.\n\n8. What is respiration?\nRespiration is the biochemical process by which food is broken down to release energy.\n\n9. Name the pigment present in red blood cells.\nHemoglobin.\n\n10. What is meant by biodiversity?\nBiodiversity refers to the variety and variability of living organisms in a given area.\n\n11. Which part of the brain controls balance of the body?\nCerebellum.\n\n12. Define ecology.\nEcology is the study of interactions between organisms and their environment.\n\n13. What is DNA?\nDNA (Deoxyribonucleic Acid) is the genetic material that carries hereditary information.\n\n14. Name the respiratory organ in fish.\nGills.\n\n15. What is vaccination?\nVaccination is the process of administering weakened or dead pathogens to stimulate immunity against specific diseases.\n\n16. Which gas is released during photosynthesis?\nOxygen.\n\n17. What is the role of insulin hormone?\nInsulin regulates blood glucose levels by promoting the uptake of glucose by cells.\n\n18. Name the scientist who proposed the theory of evolution.\nCharles Darwin.\n\n19. What is an ecosystem?\nAn ecosystem is a functional unit where living organisms interact with each other and with the non-living environment.\n\n20. Define genetics.\nGenetics is the branch of biology that deals with heredity and variation",
+    "handwritingScore": 85,
+    "readabilityScore": 85,
+    "estimatedTime": 5,
+    "wordCount": 315,
+    "sectionMarks": {},
+    "overallFeedback": "Text extraction complete. Evaluation pending.",
+    "accuracyScore": 90,
+    "detailedAnalysis": null
+  },
+  "processedAt": "2026-02-05T12:06:30.057Z",
+  "ocrResults": {
+    "provider": "groq",
+    "confidence": 90,
+    "wordCount": 315,
+    "pages": 3,
+    "hasHandwriting": true,
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct"
+  }
+}

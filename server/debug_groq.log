@@ -1,0 +1,64 @@
+2026-02-05T07:34:34.098Z Starting processFileWithGroq for: C:\Answer Paper Correction\server\uploads\original\paper-1770276873613-797837603.png
+2026-02-05T07:34:34.100Z Processing page: C:\Answer Paper Correction\server\uploads\original\paper-1770276873613-797837603.png
+2026-02-05T07:34:34.103Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\paper-1770276873613-797837603.png
+2026-02-05T07:34:37.639Z Groq extraction complete.
+2026-02-05T07:34:37.640Z Processing complete. Word count: 213
+2026-02-05T07:36:07.475Z Starting paper evaluation with Groq Reasoning...
+2026-02-05T07:36:07.506Z Starting paper evaluation with Groq Reasoning...
+2026-02-05T07:36:09.485Z Groq evaluation complete.
+2026-02-05T07:36:09.489Z Groq evaluation complete.
+2026-02-05T09:27:09.515Z Starting processFileWithGroq for: C:\Answer Paper Correction\server\uploads\original\paper-1770283628419-882582856.jpg
+2026-02-05T09:27:09.521Z Processing page: C:\Answer Paper Correction\server\uploads\original\paper-1770283628419-882582856.jpg
+2026-02-05T09:27:09.524Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\paper-1770283628419-882582856.jpg
+2026-02-05T09:27:10.559Z Groq extraction complete.
+2026-02-05T09:27:10.561Z Processing complete. Word count: 15
+2026-02-05T10:07:14.226Z Starting paper evaluation with Groq Reasoning...
+2026-02-05T10:07:14.330Z Starting paper evaluation with Groq Reasoning...
+2026-02-05T10:07:15.525Z Groq evaluation complete.
+2026-02-05T10:07:15.527Z Groq evaluation complete.
+2026-02-05T12:06:19.072Z Starting processFileWithGroq for: C:\Answer Paper Correction\server\uploads\original\paper-1770293178490-270137379.pdf
+2026-02-05T12:06:19.076Z Converting PDF: C:\Answer Paper Correction\server\uploads\original\paper-1770293178490-270137379.pdf
+2026-02-05T12:06:26.743Z PDF converted to 3 images
+2026-02-05T12:06:26.744Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293178490-270137379-1.png
+2026-02-05T12:06:26.745Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293178490-270137379-1.png
+2026-02-05T12:06:28.031Z Groq extraction complete.
+2026-02-05T12:06:28.034Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293178490-270137379-2.png
+2026-02-05T12:06:28.036Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293178490-270137379-2.png
+2026-02-05T12:06:29.269Z Groq extraction complete.
+2026-02-05T12:06:29.272Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293178490-270137379-3.png
+2026-02-05T12:06:29.274Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293178490-270137379-3.png
+2026-02-05T12:06:29.857Z Groq extraction complete.
+2026-02-05T12:06:29.867Z Cleanup complete
+2026-02-05T12:06:29.870Z Processing complete. Word count: 315
+2026-02-05T12:11:18.576Z Starting processFileWithGroq for: C:\Answer Paper Correction\server\uploads\original\paper-1770293476483-683638445.pdf
+2026-02-05T12:11:18.579Z Converting PDF: C:\Answer Paper Correction\server\uploads\original\paper-1770293476483-683638445.pdf
+2026-02-05T12:11:19.788Z PDF converted to 3 images
+2026-02-05T12:11:19.790Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293476483-683638445-1.png
+2026-02-05T12:11:19.791Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293476483-683638445-1.png
+2026-02-05T12:11:22.351Z Groq extraction complete.
+2026-02-05T12:11:22.352Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293476483-683638445-2.png
+2026-02-05T12:11:22.354Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293476483-683638445-2.png
+2026-02-05T12:11:24.016Z Groq extraction complete.
+2026-02-05T12:11:24.018Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293476483-683638445-3.png
+2026-02-05T12:11:24.026Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293476483-683638445-3.png
+2026-02-05T12:11:24.893Z Groq extraction complete.
+2026-02-05T12:11:24.908Z Cleanup complete
+2026-02-05T12:11:24.910Z Processing complete. Word count: 394
+2026-02-05T12:15:52.588Z Starting processFileWithGroq for: C:\Answer Paper Correction\server\uploads\original\paper-1770293743914-90840431.pdf
+2026-02-05T12:15:52.592Z Converting PDF: C:\Answer Paper Correction\server\uploads\original\paper-1770293743914-90840431.pdf
+2026-02-05T12:15:53.765Z PDF converted to 3 images
+2026-02-05T12:15:53.767Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293743914-90840431-1.png
+2026-02-05T12:15:53.769Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293743914-90840431-1.png
+2026-02-05T12:15:56.094Z Groq extraction complete.
+2026-02-05T12:15:56.096Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293743914-90840431-2.png
+2026-02-05T12:15:56.097Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293743914-90840431-2.png
+2026-02-05T12:15:57.817Z Groq extraction complete.
+2026-02-05T12:15:57.819Z Processing page: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293743914-90840431-3.png
+2026-02-05T12:15:57.820Z Processing image with Groq: C:\Answer Paper Correction\server\uploads\original\temp_images\paper-1770293743914-90840431-3.png
+2026-02-05T12:15:59.146Z Groq extraction complete.
+2026-02-05T12:15:59.195Z Cleanup complete
+2026-02-05T12:15:59.196Z Processing complete. Word count: 394
+2026-02-05T12:19:30.075Z Starting paper evaluation with Groq Reasoning...
+2026-02-05T12:19:30.095Z Starting paper evaluation with Groq Reasoning...
+2026-02-05T12:19:31.460Z Groq evaluation complete.
+2026-02-05T12:19:31.463Z Groq evaluation complete.
