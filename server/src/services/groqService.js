@@ -5,10 +5,9 @@ import fs from 'fs/promises';
 import { existsSync, mkdirSync, appendFileSync } from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
+import pdf2img from 'pdf-img-convert';
 
-const require = createRequire(import.meta.url);
-const poppler = require('pdf-poppler');
-
+// Restore utility functions
 const logToFile = (msg) => {
     try {
         const logPath = path.join(process.cwd(), 'debug_groq.log');
@@ -28,7 +27,7 @@ const getGroqClient = () => {
 };
 
 /**
- * Convert PDF to images using pdf-poppler
+ * Convert PDF to images using pdf-img-convert (Cross-platform, no native dependencies)
  * @param {string} pdfPath 
  * @returns {Promise<string[]>} Array of image file paths
  */
@@ -40,27 +39,19 @@ const convertPdfToImages = async (pdfPath) => {
         mkdirSync(outputDir, { recursive: true });
     }
 
-    const opts = {
-        format: 'png',
-        out_dir: outputDir,
-        out_prefix: path.basename(pdfPath, path.extname(pdfPath)),
-        page: null // null means all pages
-    };
-
     try {
-        await poppler.convert(pdfPath, opts);
+        // Convert PDF to image arrays (Uint8Array)
+        const outputImages = await pdf2img.convert(pdfPath);
+        const imageFiles = [];
 
-        // valid output files are usually named prefix-1.png, prefix-2.png etc.
-        const files = await fs.readdir(outputDir);
-        const imageFiles = files
-            .filter(f => f.startsWith(opts.out_prefix) && f.endsWith('.png'))
-            .map(f => path.join(outputDir, f))
-            .sort((a, b) => {
-                // Sort by page number
-                const numA = parseInt(a.match(/-(\d+)\.png$/)?.[1] || '0');
-                const numB = parseInt(b.match(/-(\d+)\.png$/)?.[1] || '0');
-                return numA - numB;
-            });
+        // Save each image to disk
+        for (let i = 0; i < outputImages.length; i++) {
+            const buffer = Buffer.from(outputImages[i]);
+            const filename = `${path.basename(pdfPath, path.extname(pdfPath))}-${i + 1}.png`;
+            const filepath = path.join(outputDir, filename);
+            await fs.writeFile(filepath, buffer);
+            imageFiles.push(filepath);
+        }
 
         logToFile(`PDF converted to ${imageFiles.length} images`);
         return imageFiles;
