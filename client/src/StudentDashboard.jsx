@@ -1,6 +1,6 @@
 // StudentDashboard.jsx
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '@/lib/api';
 
 const StudentDashboard = ({ user, onLogout }) => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -30,7 +30,7 @@ const StudentDashboard = ({ user, onLogout }) => {
         // If the student uploaded them, this works. 
         // If the teacher uploaded them, they won't appear here unless the system links them.
         // For now, we assume the student sees papers linked to their account.
-        const response = await axios.get(`http://localhost:5000/api/papers/user/${userId}`, {
+        const response = await api.get(`/api/papers/user/${userId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 

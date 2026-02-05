@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import api from '@/lib/api';
 import TeacherDashboard from './TeacherDashboard';
 import StudentDashboard from './StudentDashboard';
 
@@ -21,12 +21,12 @@ const AuthCard = ({ role, mode, onModeChange, onAuth }) => {
     setLoading(true);
     try {
       const endpoint = mode === 'login' ? '/api/auth/login' : '/api/auth/register';
-      const res = await axios.post(endpoint, { email, password, role });
+      const res = await api.post(endpoint, { email, password, role });
       onAuth(res.data);
     } catch (err) {
       console.error('Login error:', err);
       let msg = 'Request failed';
-      
+
       if (err.response) {
         msg = err.response.data?.message || `Server error: ${err.response.status}`;
       } else if (err.request) {
@@ -34,7 +34,7 @@ const AuthCard = ({ role, mode, onModeChange, onAuth }) => {
       } else {
         msg = err.message || 'Request failed';
       }
-      
+
       setError(msg);
     } finally {
       setLoading(false);
@@ -45,16 +45,16 @@ const AuthCard = ({ role, mode, onModeChange, onAuth }) => {
     <div style={styles.authCard}>
       <div style={styles.authHeader}>
         <h3 style={styles.authTitle}>
-          {mode === 'login' ? 'Welcome Back' : 'Create Account'} 
+          {mode === 'login' ? 'Welcome Back' : 'Create Account'}
           <span style={styles.roleBadge}>{ROLE_LABELS[role]}</span>
         </h3>
         <p style={styles.authSubtitle}>
-          {mode === 'login' 
-            ? 'Enter your credentials to access your dashboard' 
+          {mode === 'login'
+            ? 'Enter your credentials to access your dashboard'
             : 'Sign up to get started with AI-powered paper correction'
           }
         </p>
-        
+
         <div style={styles.toggleContainer}>
           <div style={styles.toggleButtons}>
             <button
@@ -130,8 +130,8 @@ const AuthCard = ({ role, mode, onModeChange, onAuth }) => {
           </div>
         )}
 
-        <button 
-          type="submit" 
+        <button
+          type="submit"
           disabled={loading}
           style={{
             ...styles.submitButton,
@@ -157,8 +157,8 @@ const AuthCard = ({ role, mode, onModeChange, onAuth }) => {
 
       <div style={styles.authFooter}>
         <p style={styles.authFooterText}>
-          {mode === 'login' 
-            ? "Don't have an account? " 
+          {mode === 'login'
+            ? "Don't have an account? "
             : "Already have an account? "
           }
           <button
@@ -178,9 +178,9 @@ const Dashboard = ({ user, onLogout }) => {
   if (user.role === 'teacher') {
     return <TeacherDashboard user={user} onLogout={onLogout} />;
   }
-  
-  
-    return <StudentDashboard user={user} onLogout={onLogout} />;
+
+
+  return <StudentDashboard user={user} onLogout={onLogout} />;
 };
 
 const App = () => {
@@ -199,7 +199,7 @@ const App = () => {
       if (!auth?.token) return;
       setChecking(true);
       try {
-        const res = await axios.get('/api/auth/me', {
+        const res = await api.get('/api/auth/me', {
           headers: { Authorization: `Bearer ${auth.token}` }
         });
         setAuth({ token: auth.token, user: res.data.user });
@@ -245,8 +245,8 @@ const App = () => {
           <header style={styles.header}>
             <div style={styles.logoContainer}>
               <div style={styles.logoIcon}><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48">
-    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M25.875 3.944L29.39 17.23a1.94 1.94 0 0 0 1.38 1.379l13.287 3.515c1.924.51 1.924 3.24 0 3.75L30.769 29.39a1.94 1.94 0 0 0-1.379 1.38l-3.515 13.287c-.51 1.924-3.24 1.924-3.75 0L18.61 30.769a1.94 1.94 0 0 0-1.38-1.379L3.944 25.875c-1.924-.51-1.924-3.24 0-3.75l13.288-3.515a1.94 1.94 0 0 0 1.379-1.38l3.515-13.287c.51-1.924 3.24-1.924 3.75 0"/>
-</svg></div>
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M25.875 3.944L29.39 17.23a1.94 1.94 0 0 0 1.38 1.379l13.287 3.515c1.924.51 1.924 3.24 0 3.75L30.769 29.39a1.94 1.94 0 0 0-1.379 1.38l-3.515 13.287c-.51 1.924-3.24 1.924-3.75 0L18.61 30.769a1.94 1.94 0 0 0-1.38-1.379L3.944 25.875c-1.924-.51-1.924-3.24 0-3.75l13.288-3.515a1.94 1.94 0 0 0 1.379-1.38l3.515-13.287c.51-1.924 3.24-1.924 3.75 0" />
+              </svg></div>
               <h1 style={styles.logoText}>AI PaperCorrection</h1>
             </div>
             <p style={styles.tagline}>Smart Evaluation for Modern Education</p>
@@ -261,12 +261,12 @@ const App = () => {
                   <span style={styles.highlight}> with AI</span>
                 </h2>
                 <p style={styles.heroDescription}>
-                  Experience the future of answer script evaluation. 
-                  Our platform combines advanced AI with intuitive design 
-                  to provide accurate, fast, and fair assessment for both 
+                  Experience the future of answer script evaluation.
+                  Our platform combines advanced AI with intuitive design
+                  to provide accurate, fast, and fair assessment for both
                   teachers and students.
                 </p>
-                
+
                 <div style={styles.featuresGrid}>
                   <div style={styles.featureCard}>
                     <div style={styles.featureIcon}>⚡</div>
@@ -287,7 +287,7 @@ const App = () => {
 
                 {!showAuth ? (
                   <div style={styles.ctaSection}>
-                    <button 
+                    <button
                       onClick={() => setShowAuth(true)}
                       style={styles.ctaButton}
                     >
@@ -314,7 +314,7 @@ const App = () => {
                           <span style={styles.roleButtonIcon}>👨‍🏫</span>
                           <div style={styles.roleButtonContent}>
                             <strong>Teacher</strong>
-                        
+
                           </div>
                           {selectedRole === 'teacher' && (
                             <span style={styles.checkmark}>✓</span>
@@ -330,7 +330,7 @@ const App = () => {
                           <span style={styles.roleButtonIcon}>👨‍🎓</span>
                           <div style={styles.roleButtonContent}>
                             <strong>Student</strong>
-                            
+
                           </div>
                           {selectedRole === 'student' && (
                             <span style={styles.checkmark}>✓</span>
@@ -340,11 +340,11 @@ const App = () => {
                     </div>
 
                     {selectedRole ? (
-                      <AuthCard 
-                        role={selectedRole} 
-                        mode={mode} 
-                        onModeChange={setMode} 
-                        onAuth={handleAuthSuccess} 
+                      <AuthCard
+                        role={selectedRole}
+                        mode={mode}
+                        onModeChange={setMode}
+                        onAuth={handleAuthSuccess}
                       />
                     ) : (
                       <div style={styles.rolePrompt}>

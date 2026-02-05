@@ -1,6 +1,6 @@
 // AnswerKey.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import axios from 'axios';
+import api from '@/lib/api';
 
 const AnswerKey = ({ user, onBack }) => {
     const [subject, setSubject] = useState('');
@@ -30,7 +30,7 @@ const AnswerKey = ({ user, onBack }) => {
             try {
                 const token = localStorage.getItem('token');
                 const userId = user.id || user.email;
-                const response = await axios.get(`/api/papers/user/${userId}`, {
+                const response = await api.get(`/api/papers/user/${userId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
 
@@ -66,7 +66,7 @@ const AnswerKey = ({ user, onBack }) => {
                 const interval = setInterval(async () => {
                     try {
                         const token = localStorage.getItem('token');
-                        const response = await axios.get(`/api/papers/${file.backendId}/status`, {
+                        const response = await api.get(`/api/papers/${file.backendId}/status`, {
                             headers: { Authorization: `Bearer ${token}` }
                         });
 
@@ -171,7 +171,7 @@ const AnswerKey = ({ user, onBack }) => {
                 formData.append('gradingSettings', JSON.stringify({}));
 
                 try {
-                    const response = await axios.post('/api/papers/upload/student-papers', formData, {
+                    const response = await api.post('/api/papers/upload/student-papers', formData, {
                         headers: {
                             'Content-Type': 'multipart/form-data',
                             'Authorization': `Bearer ${token}`
@@ -221,7 +221,7 @@ const AnswerKey = ({ user, onBack }) => {
         try {
             const token = localStorage.getItem('token');
             if (backendId) {
-                await axios.delete(`/api/papers/${backendId}`, {
+                await api.delete(`/api/papers/${backendId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
             }

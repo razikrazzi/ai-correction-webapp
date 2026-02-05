@@ -1,6 +1,6 @@
 // StartGrading.jsx
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '@/lib/api';
 
 const StartGrading = ({ user, onBack, onStartGrading }) => {
   // Step State
@@ -52,7 +52,7 @@ const StartGrading = ({ user, onBack, onStartGrading }) => {
         const userId = user.id || user.email;
 
         // Fetch papers
-        const response = await axios.get(`/api/papers/user/${userId}`, {
+        const response = await api.get(`/api/papers/user/${userId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         const papers = response.data || [];
@@ -73,7 +73,7 @@ const StartGrading = ({ user, onBack, onStartGrading }) => {
 
         // Fetch Students
         try {
-          const studentsRes = await axios.get('/api/auth/students', {
+          const studentsRes = await api.get('/api/auth/students', {
             headers: { Authorization: `Bearer ${token}` }
           });
           setStudents(studentsRes.data.map(s => ({

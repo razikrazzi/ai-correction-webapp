@@ -1,6 +1,6 @@
 // TeacherDashboard.jsx - Modified version
 import React, { useState, useRef, useEffect } from 'react';
-import axios from 'axios';
+import api from '@/lib/api';
 import { SplineSceneBasic } from '@/components/ui/demo';
 import UploadStudentPapers from './UploadStudentPapers';
 import AnswerKey from './AnswerKey'; // Import the new component
@@ -30,7 +30,7 @@ const TeacherDashboard = ({ user, onLogout }) => {
       const userId = user.id || user._id; // Handle both id formats
       if (!userId) return;
 
-      const response = await axios.get(`http://localhost:5000/api/papers/user/${userId}`, {
+      const response = await api.get(`/api/papers/user/${userId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUploadedFiles(response.data);
@@ -48,7 +48,7 @@ const TeacherDashboard = ({ user, onLogout }) => {
   const deleteFile = async (fileId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/papers/${fileId}`, {
+      await api.delete(`/api/papers/${fileId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUploadedFiles(prev => prev.filter(f => f._id !== fileId));
@@ -77,7 +77,7 @@ const TeacherDashboard = ({ user, onLogout }) => {
     try {
       setStudentsModal(prev => ({ ...prev, isOpen: true, loading: true }));
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/auth/students', {
+      const response = await api.get('/api/auth/students', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setStudentsModal({ isOpen: true, students: response.data, loading: false });

@@ -1,6 +1,6 @@
 // UploadStudentPapers.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import axios from 'axios';
+import api from '@/lib/api';
 
 const UploadStudentPapers = ({ user, onBack }) => {
   const [studentPaperSubject, setStudentPaperSubject] = useState('');
@@ -34,13 +34,13 @@ const UploadStudentPapers = ({ user, onBack }) => {
         const userId = user.id || user.email;
 
         // Fetch Students
-        const studentsRes = await axios.get('http://localhost:5000/api/auth/students', {
+        const studentsRes = await api.get('/api/auth/students', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setStudents(studentsRes.data);
 
         // Fetch Recent Papers
-        const papersRes = await axios.get(`http://localhost:5000/api/papers/user/${userId}`, {
+        const papersRes = await api.get(`/api/papers/user/${userId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -84,7 +84,7 @@ const UploadStudentPapers = ({ user, onBack }) => {
         const interval = setInterval(async () => {
           try {
             const token = localStorage.getItem('token');
-            const response = await axios.get(`http://localhost:5000/api/papers/${file.backendId}/status`, {
+            const response = await api.get(`/api/papers/${file.backendId}/status`, {
               headers: { Authorization: `Bearer ${token}` }
             });
 
@@ -157,7 +157,7 @@ const UploadStudentPapers = ({ user, onBack }) => {
         gradingSettings: {} // Empty settings
       };
 
-      const response = await axios.post('http://localhost:5000/api/papers/save-config', configData, {
+      const response = await api.post('/api/papers/save-config', configData, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
@@ -237,7 +237,7 @@ const UploadStudentPapers = ({ user, onBack }) => {
 
 
         try {
-          const response = await axios.post('http://localhost:5000/api/papers/upload/student-papers', formData, {
+          const response = await api.post('/api/papers/upload/student-papers', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
               'Authorization': `Bearer ${token}`
@@ -287,7 +287,7 @@ const UploadStudentPapers = ({ user, onBack }) => {
     try {
       const token = localStorage.getItem('token');
       if (backendId) {
-        await axios.delete(`http://localhost:5000/api/papers/${backendId}`, {
+        await api.delete(`/api/papers/${backendId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
       }

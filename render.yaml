@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: answer-paper-correction-backend
+    env: docker
+    plan: free 
+    region: ohio # Default, acts as placeholder
+    context: server
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: CLIENT_URL
+        sync: false

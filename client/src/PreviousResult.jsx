@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import axios from 'axios';
+import api from '@/lib/api';
 
 import DetailedEvaluationReport from './DetailedEvaluationReport';
 
@@ -37,7 +37,7 @@ const PreviousResult = ({ onBack, pendingGradingParams, clearPendingParams }) =>
 
         try {
             // Check if we are grading Section-wise or Question-wise
-            const response = await axios.post('/api/grading/grade', {
+            const response = await api.post('/api/grading/grade', {
                 subject: params.subject,
                 totalMarks: params.totalMarks,
                 sections: params.sections,
@@ -85,7 +85,7 @@ const PreviousResult = ({ onBack, pendingGradingParams, clearPendingParams }) =>
         try {
             const token = localStorage.getItem('token');
             // Ensure we use relative path consistent with other fixes
-            await axios.put(`/api/papers/${paperId}/result`, {
+            await api.put(`/api/papers/${paperId}/result`, {
                 result: resultData,
                 studentId: studentId
             }, {
